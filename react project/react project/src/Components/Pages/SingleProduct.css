@@ -1,0 +1,142 @@
+.Product-card {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    margin: 5%;
+    padding: 5%;
+    box-shadow: 0 0 5px rgba(58, 57, 57, 0.3);
+    border-radius: 5px;
+  }
+  
+  .Product-Img {
+    margin-left: 5%;
+  }
+  
+  .Product-Img img {
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  .Product-Details {
+    flex: 0.7;
+    margin-left: 10%;
+  }
+  
+  #Product-description {
+    word-wrap: break-word;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  #Product-price {
+    color: darkgreen; /* Match text color */
+    font-weight: 600;
+  }
+  
+  .Product-Details button {
+    margin-top: 5%;
+    border: none;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 25px;
+    background-color: green; /* Match background color */
+    cursor: pointer;
+  }
+  
+  .Product-Details button:hover {
+    background-color: darkgreen; /* Change background color on hover */
+  }
+  
+  @media screen and (max-width: 425px) {
+    .Product-card {
+      flex-direction: column;
+      padding: 5%;
+      margin: 5%;
+    }
+     
+    .Product-Img img {
+      width: 70px;
+    }
+  
+    #Product-description {
+      word-wrap: break-word;
+      font-size: 12px;
+    }
+  
+    .Product-Details h2 {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    #Product-description {
+      word-wrap: break-word;
+      font-size: 15px;
+    }
+  
+    .Product-Details {
+      flex: 1;
+      margin-left: 10%;
+    }
+  
+    .Product-Details h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .Product-card {
+      flex-direction: row;
+      margin: 5%;
+      padding: 5%;
+    }
+  
+    .Product-Img img {
+      width: 400px;
+      height: 350px;
+    }
+  
+    .Product-Img {
+      margin-left: 5%;
+      flex: 0.7;
+    }
+  
+    .Product-Details {
+      flex: 1;
+      margin-left: 10%;
+    }
+  
+    #Product-description {
+      word-wrap: break-word;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      font-size: 20px;
+    }
+  
+    .Product-Details h2 {
+      font-size: 50px;
+    }
+  
+    #Product-price {
+      color: darkgreen; /* Match text color */
+      font-weight: 600;
+      font-size: 20px;
+    }
+  
+    .Product-Details button {
+      margin-top: 5%;
+      border: none;
+      color: white;
+      padding: 3% 10%;
+      border-radius: 25px;
+      background-color: green; /* Match background color */
+      font-size: 20px;
+      cursor: pointer;
+    }
+  
+    .Product-Details button:hover {
+      background-color: darkgreen; /* Change background color on hover */
+    }
+  }
+  
